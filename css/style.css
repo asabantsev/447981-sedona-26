@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #FFFFFF;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81B3D2;
+}
+
+.welcome {
+  background-image: url("../img/intro.jpg");
+  background-repeat: no-repeat;
+
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.about p {
+  line-height: 26px;
+  color: #333333;
+}
+
+.search h2 {
+  font-size: 30px;
+}
+
+.search h4 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+
+  background-color: #766357;
+}
+
+.search label {
+  font-weight: 700;
+}
+
+.search input {
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+
+  border: none;
+  background-color: #F2F2F2;
+  border: solid 2px #F2F2F2;
+}
+
+.search input::placeholder {
+  color: #000000;
+}
+
+.search input:hover {
+  background-color: #EBEBEB;
+  border: solid 2px #EBEBEB;
+}
+
+.search input:focus {
+  background-color: #FFFFFF;
+  border: solid 2px #E5E5E5;
+}
+
+.search button {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+
+  background-color: #81B3D2;
+  border: none;
+}
+
+.search button:hover {
+  background-color: #669EC0;
+}
+
+.search button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496BD;
+}
+
+.main-footer h4 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog-item button {
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+}
+
+.catalog-item .more {
+  background-color: #81B3D2;
+}
+
+.catalog-item .more:hover {
+  background-color: #669EC0;
+}
+
+.catalog-item .more:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496BD;
+}
+
+.catalog-item .book {
+  background-color: #766357;
+}
+
+.catalog-item .book:hover {
+  background-color: #604E43;
+}
+
+.catalog-item .book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503E33;
+}
+
+.rating {
+  background-color: #F2F2F2;
+  color: #666666;
+}
