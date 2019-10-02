@@ -63,9 +63,10 @@ a {
   font-size: 30px;
 }
 
-.search h4 {
+.search a {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
   color: #FFFFFF;
 
   background-color: #766357;
@@ -148,12 +149,12 @@ a {
   font-weight: 700;
 }
 
-.catalog-item button {
-  font: inherit;
+.catalog-item a {
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
-  border: none;
 }
 
 .catalog-item .more {
