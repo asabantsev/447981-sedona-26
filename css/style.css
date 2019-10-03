@@ -38,6 +38,15 @@ a {
   color: #81B3D2;
 }
 
+.site-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.site-navigation-current {
+  color: #766357;
+}
+
 .welcome {
   background-image: url("../img/intro.jpg");
   background-repeat: no-repeat;
@@ -56,6 +65,65 @@ a {
 
 .about p {
   line-height: 26px;
+  color: #333333;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list li {
+  background-color: #81B3D2;
+}
+
+.features-list li:nth-of-type(n+3) {
+  background-color: #EEEEEE;
+}
+
+.features-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.features-list p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.features-list li:nth-of-type(n+3) h3 {
+  color: #000000;
+}
+
+.features-list li:nth-of-type(n+3) p {
+  color: #000000;
+}
+
+.city-features-list {
+  background-color: #FFFFFF;
+}
+
+.city-features-list li {
+  background-color: #FFFFFF;
+  list-style: none;
+}
+
+.city-features-list li:nth-of-type(n+3) {
+  background-color: #FFFFFF;
+}
+
+.city-features-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.city-features-list p {
+  font-size: 14px;
+  line-height: 21px;
   color: #333333;
 }
 
@@ -139,14 +207,12 @@ a {
   list-style: none;
 }
 
-.catalog-item a {
-  color: #000000;
-}
-
-.catalog-item h3 {
+.catalog-item h3 a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .catalog-item a {
@@ -186,4 +252,86 @@ a {
 .rating {
   background-color: #F2F2F2;
   color: #666666;
+}
+
+.filters {
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.filters input[type="text"] {
+  font: inherit;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: none;
+  border: solid 2px #FFFFFF;
+}
+
+.filters button {
+  font: inherit;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: none;
+  border: solid 2px #FFFFFF;
+}
+
+.filters button:hover {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #FFFFFF;
+  border: solid 2px #FFFFFF;
+}
+
+.sort h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort ul {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: dotted 1px #81B3D2;
+}
+
+.sort a:hover {
+  color: #81B3D2;
+}
+
+.sort a:active {
+  color: #000000;
+  border: none;
+}
+
+.sort span {
+  color: #81B3D2;
 }

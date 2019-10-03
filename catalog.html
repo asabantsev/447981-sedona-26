@@ -8,72 +8,76 @@
 </head>
 <body class="inner-page">
   <header>
-    <nav>
+    <nav class="main-navigation">
       <a href="index.html">
         <img src="img/logo.svg" width="138" height="71" alt="Sedona">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="multimedia.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
-        <li><a>Гостиницы</a></li>
+        <li class="site-navigation-current">Гостиницы</li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Гостиницы</h1>
-    <form method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend>Инфраструктура:</legend>
-        <ul>
-          <li>
-            <input type="checkbox" name="pool" id="filter-pool" checked>
-            <label for="pool">Бассейн</label>
-          </li>
-          <li>
-            <input type="checkbox" name="parking" id="filter-parking">
-            <label for="parking">Парковка</label>
-          </li>
-          <li>
-            <input type="checkbox" name="wifi" id="filter-wifi">
-            <label for="wifi">Wi-Fi</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>Тип жилья:</legend>
-        <ul>
-          <li>
-            <input type="checkbox" name="hotel" id="filter-hotel" checked>
-            <label for="hotel">Гостиница</label>
-          </li>
-          <li>
-            <input type="checkbox" name="motel" id="filter-motel">
-            <label for="motel">Мотель</label>
-          </li>
-          <li>
-            <input type="checkbox" name="apartments" id="filter-apartments">
-            <label for="apartments">Апартаменты</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>Стоимость в сутки (Р):</legend>
-        <ul>
-          <li>
-            <input id="min-cost" type="text" name="min-cost" value="" placeholder="от 0">
-          </li>
-          <li>
-            <input id="max-cost" type="text" name="max-cost" value="" placeholder="до 3000">
-          </li>
-          <li>
-            <input type="range" name="cost">
-          </li>
-        </ul>
-      </fieldset>
-      <button type="submit">Показать</button>
-    </form>
-    <section>
+    <h1 class="visually-hidden">Гостиницы</h1>
+
+    <section class="filters">
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wifi" id="filter-wifi">
+              <label for="wifi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <ul>
+            <li>
+              <input id="min-cost" type="text" name="min-cost" value="" placeholder="от 0">
+            </li>
+            <li>
+              <input id="max-cost" type="text" name="max-cost" value="" placeholder="до 3000">
+            </li>
+            <li>
+              <input type="range" name="cost">
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section class="sort">
       <h3>Найдено: 3</h3>
       <ul>
         <li>Сортировка:</li>
@@ -96,6 +100,7 @@
         </li>
       </ul>
     </section>
+
     <section>
       <h2>Список гостиниц</h2>
       <ul class="catalog-list">
