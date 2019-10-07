@@ -7,20 +7,22 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
-  <header>
+
+  <header class="main-header">
     <nav class="main-navigation">
-      <a href="index.html">
+      <a class="main-header-logo">
         <img src="img/logo.svg" width="138" height="71" alt="Sedona">
       </a>
       <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
+        <!-- <li><a href="info.html">Информация</a></li>
         <li><a href="multimedia.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
-        <li class="site-navigation-current">Гостиницы</li>
+        <li class="site-navigation-current">Гостиницы</li> -->
       </ul>
     </nav>
   </header>
-  <main>
+
+  <main class="container">
     <h1 class="visually-hidden">Гостиницы</h1>
 
     <section class="filters">
@@ -101,94 +103,121 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Список гостиниц</h2>
+    <section class="catalog">
+
       <ul class="catalog-list">
         <li class="catalog-item">
-          <a href="#">
-            <img src="img/item-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
-          </a>
-          <div>
-            <h3>
-              <a href="#">Amara Resort & Spa</a>
-            </h3>
-            <p>
-              <span>Гостиница</span>
-              <span>от 4000 р.</span>
-            </p>
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
-          </div>
-          <div>
-            <span>4 звезды</span>
-            <span class="rating">Рейтинг: 8,5</span>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <a href="#">
-            <img src="img/item-2.jpg" width="135" height="90" alt="Desert Quail Inn">
-          </a>
-          <div>
-            <h3>
-              <a href="#">Desert Quail Inn</a>
-            </h3>
-            <p>
-              <span>Мотель</span>
-              <span>от 3000 р.</span>
-            </p>
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
-          </div>
-          <div>
-            <span>3 звезды</span>
-            <span class="rating">Рейтинг: 8,9</span>
+          <div class="catalog-item-wrapper">
+            <div class="photo">
+              <a href="#">
+                <img src="img/item-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
+              </a>
+            </div>
+            <div class="info">
+              <div>
+                <h3>
+                  <a href="#">Amara Resort & Spa</a>
+                </h3>
+                <p>
+                  <span>Гостиница</span>
+                  <span>от 4000 р.</span>
+                </p>
+                <a href="#" class="more">Подробнее</a>
+                <a href="#" class="book">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating-block">
+              <span>4 звезды</span>
+              <span class="rating">Рейтинг: 8,5</span>
+            </div>
           </div>
         </li>
         <li class="catalog-item">
-          <a href="#">
-            <img src="img/item-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-          </a>
-          <div>
-            <h3>
-              <a href="#">Villas at Poco Diablo</a>
-            </h3>
-            <p>
-              <span>Апартаменты</span>
-              <span>от 2000 р.</span>
-            </p>
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
+          <div class="catalog-item-wrapper">
+            <div class="photo">
+              <a href="#">
+                <img src="img/item-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+              </a>
+            </div>
+            <div class="info">
+              <div>
+                <h3>
+                  <a href="#">Desert Quail Inn</a>
+                </h3>
+                <p>
+                  <span>Мотель</span>
+                  <span>от 3000 р.</span>
+                </p>
+                <a href="#" class="more">Подробнее</a>
+                <a href="#" class="book">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating-block">
+              <span>3 звезды</span>
+              <span class="rating">Рейтинг: 8,9</span>
+            </div>
           </div>
-          <div>
-            <span>2 звезды</span>
-            <span class="rating">Рейтинг: 9,2</span>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-wrapper">
+            <div class="photo">
+              <a href="#">
+                <img src="img/item-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+              </a>
+            </div>
+            <div class="info">
+              <div>
+                <h3>
+                  <a href="#">Villas at Poco Diablo</a>
+                </h3>
+                <p>
+                  <span>Апартаменты</span>
+                  <span>от 2000 р.</span>
+                </p>
+                <a href="#" class="more">Подробнее</a>
+                <a href="#" class="book">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating-block">
+              <span>2 звезды</span>
+              <span class="rating">Рейтинг: 9,2</span>
+            </div>
           </div>
         </li>
       </ul>
     </section>
+
   </main>
 
   <footer class="main-footer">
-    <h4>#visitsedona</h4>
-    <div class="footer-social">
-      <ul>
-        <li>
-          <a href="#" class="social-button" aria-label="Twitter">Twitter</a>
-        </li>
-        <li>
-          <a href="#" class="social-button" aria-label="Facebook">Facebook</a>
-        </li>
-        <li>
-          <a href="#" class="social-button" aria-label="YouTube">YouTube</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="footer-item">
+        <h4>#visitsedona</h4>
+      </div>
+      <div class="footer-item">
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="#" class="social-button" aria-label="Twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="social-button" aria-label="Facebook">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="social-button" aria-label="YouTube">YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-item">
+        <p>
+          Website by
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" alt="Html Academy" width="115" height="41">
+          </a>
+        </p>
+      </div>
     </div>
-    <p>
-      Website by
-      <a href="https://htmlacademy.ru">
-        <img src="img/logo-htmlacademy.svg" alt="Html Academy" width="115" height="41">
-      </a>
-    </p>
   </footer>
 
 </body>

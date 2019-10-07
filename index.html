@@ -7,9 +7,10 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <header class="main-header">
     <nav class="main-navigation">
-      <a>
+      <a class="main-header-logo">
         <img src="img/logo.svg" width="138" height="71" alt="Sedona">
       </a>
       <ul class="site-navigation">
@@ -20,7 +21,8 @@
       </ul>
     </nav>
   </header>
-  <main>
+
+  <main class="container">
     <h1 class="visually-hidden">Sedona</h1>
 
     <div class="welcome">
@@ -33,7 +35,7 @@
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
-    <section>
+    <section class="features-list-wrapper">
       <ul class="features-list">
         <li>
           <h3>Настоящий городок</h3>
@@ -56,7 +58,6 @@
               </li>
             </ul>
           </div>
-
         </li>
         <li>
           <h3>Там есть Мост дьявола</h3>
@@ -111,32 +112,40 @@
         </form>
       </div>
     </section>
-    <section>
-      <img src="img/map.jpg" width="1200" height="600" alt="Карта Седоны">
+
+    <section class="map">
     </section>
   </main>
 
   <footer class="main-footer">
-    <h4>#visitsedona</h4>
-    <div class="footer-social">
-      <ul>
-        <li>
-          <a href="#" class="social-button" aria-label="Twitter">Twitter</a>
-        </li>
-        <li>
-          <a href="#" class="social-button" aria-label="Facebook">Facebook</a>
-        </li>
-        <li>
-          <a href="#" class="social-button" aria-label="YouTube">YouTube</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="footer-item">
+        <h4>#visitsedona</h4>
+      </div>
+      <div class="footer-item">
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="#" class="social-button" aria-label="Twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="social-button" aria-label="Facebook">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="social-button" aria-label="YouTube">YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-item">
+        <p>
+          Website by
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" alt="Html Academy" width="115" height="41">
+          </a>
+        </p>
+      </div>
     </div>
-    <p>
-      Website by
-      <a href="https://htmlacademy.ru">
-        <img src="img/logo-htmlacademy.svg" alt="Html Academy" width="115" height="41">
-      </a>
-    </p>
   </footer>
 
 </body>

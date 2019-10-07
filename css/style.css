@@ -10,6 +10,9 @@ body {
   text-transform: uppercase;
 
   background-color: #FFFFFF;
+  /*background-image: url("../img/index.jpg");*/
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -21,8 +24,6 @@ a {
   font-weight: 700;
   line-height: 26px;
   color: #000000;
-
-  background-color: #FFFFFF;
 }
 
 .site-navigation {
@@ -255,8 +256,8 @@ a {
 }
 
 .filters {
-  background-image: url("../img/filter-background.jpg");
-  background-repeat: no-repeat;
+  /*background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;*/
 }
 
 .filters fieldset {
@@ -335,3 +336,157 @@ a {
 .sort span {
   color: #81B3D2;
 }
+
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1200px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.main-header-logo {
+  order: 2;
+  width: 138px;
+  position: absolute;
+
+  /* Временно для сетки */
+  min-height: 71px;
+}
+
+.site-navigation {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.welcome {
+
+  /* Временно для сетки */
+  min-height: 510px;
+}
+
+.about {
+
+  /* Временно для сетки */
+  min-height: 215px;
+}
+
+.features-list-wrapper {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 1100px;
+}
+
+.search {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 290px;
+}
+
+.map {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+
+  /* Временно для сетки */
+  min-height: 475px;
+}
+
+.main-footer {
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-item {
+  width: 200px;
+
+  /* Временно для сетки */
+  min-height: 120px;
+}
+
+ .inner-page {
+  /* Временно для сетки */
+  /*background-image: url('../img/hotels.jpg');*/
+  background-size: 1280px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.filters {
+  /* Временно для сетки */
+  min-height: 215px;
+}
+
+.sort {
+  /* Временно для сетки */
+  min-height: 85px;
+}
+
+.catalog ul {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  border-bottom: solid 1px #E5E5E5;
+
+  /* Временно для сетки */
+  min-height: 150px;
+}
+
+.catalog-item-wrapper {
+  width: 1056px;
+  height: 90px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item .photo {
+  width: 135px;
+  min-height: 90px;
+}
+
+.catalog-item .info {
+  width: 725px;
+  min-height: 90px;
+}
+
+.catalog-item .rating-block {
+  width: 135px;
+  min-height: 90px;
+}
+
+
