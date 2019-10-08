@@ -196,10 +196,6 @@ a {
   line-height: 26px;
 }
 
-.footer-social ul {
-  list-style: none;
-}
-
 .social-button {
   color: #000000;
 }
@@ -350,8 +346,6 @@ body {
 }
 
 .main-header {
-
-  /* Временно для сетки */
   min-height: 56px;
 }
 
@@ -359,64 +353,48 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* Временно для сетки */
   min-height: 56px;
 }
 
 .main-header-logo {
   order: 2;
   width: 138px;
-  position: absolute;
-
-  /* Временно для сетки */
   min-height: 71px;
+  position: absolute;
 }
 
 .site-navigation {
   width: 1200px;
   margin: 0;
   padding: 0;
+  min-height: 56px;
 
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 56px;
 }
 
 .welcome {
-
-  /* Временно для сетки */
   min-height: 510px;
 }
 
 .about {
-
-  /* Временно для сетки */
   min-height: 215px;
 }
 
 .features-list-wrapper {
   margin: 0;
   padding: 0;
-
-  /* Временно для сетки */
   min-height: 1100px;
 }
 
 .search {
   margin: 0;
   padding: 0;
-
-  /* Временно для сетки */
   min-height: 290px;
 }
 
 .map {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-
-  /* Временно для сетки */
   min-height: 475px;
 }
 
@@ -430,13 +408,14 @@ body {
 
 .footer-item {
   width: 200px;
-
-  /* Временно для сетки */
   min-height: 120px;
 }
 
+.footer-item ul {
+  list-style: none;
+}
+
  .inner-page {
-  /* Временно для сетки */
   /*background-image: url('../img/hotels.jpg');*/
   background-size: 1280px;
   background-position: top center;
@@ -444,12 +423,10 @@ body {
 }
 
 .filters {
-  /* Временно для сетки */
   min-height: 215px;
 }
 
 .sort {
-  /* Временно для сетки */
   min-height: 85px;
 }
 
@@ -460,18 +437,16 @@ body {
 
 .catalog-item {
   border-bottom: solid 1px #E5E5E5;
-
-  /* Временно для сетки */
-  min-height: 150px;
 }
 
 .catalog-item-wrapper {
-  width: 1056px;
-  height: 90px;
-  margin: 0 auto;
-  padding-top: 30px;
+  max-width: 1056px;
+  min-height: 150px;
+  padding: 0 72px;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .catalog-item .photo {
@@ -480,8 +455,10 @@ body {
 }
 
 .catalog-item .info {
-  width: 725px;
+  max-width: 725px;
+  width: 100%;
   min-height: 90px;
+  padding: 0 30px;
 }
 
 .catalog-item .rating-block {
