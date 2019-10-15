@@ -101,32 +101,34 @@
 
       <section class="search">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="index-form-wrap">
           <a href="#">Поиск гостиницы в Седоне</a>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="index-form">
+            <form action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label for="arrival-date">Дата заезда:</label>
-              <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017" class="full-lenght">
             </p>
             <p>
               <label for="departure-date">Дата выезда:</label>
-              <input id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+              <input id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017" class="full-lenght">
             </p>
-            <p>
+            <p class="people">
               <label for="adults-number">Взрослые:</label>
-              <input type="button" name="reduce-adults-number" value="-">
-              <input id="adults-number" type="text" name="adults-number" value="" placeholder="2">
-              <input type="button" name="increase-adults-number" value="+">
+              <button type="button" name="reduce-adults-number" class="input-control">-</button>
+              <input id="adults-number" type="text" name="adults-number" value="" placeholder="2"  class="input-amount">
+              <button type="button" name="increase-adults-number" class="input-control">+</button>
             </p>
-            <p>
-              <label for="children-number">Дети:</label>
-              <input type="button" name="reduce-children-number" value="-">
-              <input id="children-number" type="tel" name="children-number" value="" placeholder="0">
-              <input type="button" name="increase-children-number" value="+">
+            <p class="people">
+              <label for="children-number" class="children">Дети:</label>
+              <button type="button" name="reduce-children-number" class="input-control">-</button>
+              <input id="children-number" type="tel" name="children-number" value="" placeholder="0" class="input-amount">
+              <button type="button" name="reduce-children-number" class="input-control">+</button>
             </p>
-            <button type="submit">Найти</button>
+            <button type="submit" class="form-submit-button">Найти</button>
           </form>
+          </div>
         </div>
       </section>
 
@@ -136,7 +138,7 @@
     <footer class="main-footer">
       <div class="main-footer-wrapper">
         <div class="footer-item hashtag">#visitsedona</div>
-        <ul class="footer-item">
+        <ul class="footer-item social">
           <li>
             <a href="#" class="social-button" aria-label="Twitter">Twitter</a>
           </li>
@@ -147,7 +149,7 @@
             <a href="#" class="social-button" aria-label="YouTube">YouTube</a>
           </li>
         </ul>
-        <p class="footer-item">
+        <p class="footer-item developer">
           Website by
           <a href="https://htmlacademy.ru">
             <img src="img/logo-htmlacademy.svg" alt="Html Academy" width="115" height="41">
