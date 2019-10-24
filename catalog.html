@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <title>Гостиницы</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-minified.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body class="inner-page">
 
@@ -13,7 +14,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-          <img src="img/logo.svg" width="138" height="71" alt="Sedona">
+          <img src="img/logo.svg" width="138" height="71" alt="Логотип Sedona">
         </a>
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="info.html">Информация</a></li>
@@ -28,6 +29,7 @@
       <h1 class="visually-hidden">Гостиницы</h1>
 
       <section>
+        <h2 class="visually-hidden">Форма с фильтрами по отелям</h2>
         <form method="get" action="https://echo.htmlacademy.ru" class="filters-form">
           <fieldset>
             <legend class="filter-form-heading">Инфраструктура:</legend>
@@ -73,7 +75,7 @@
           </fieldset>
           <fieldset>
             <div class="filter-range">
-              <legend class="filter-form-heading">Стоимость в сутки (р):</legend>
+              <span class="filter-form-heading">Стоимость в сутки (р):</span>
               <div class="price-controls">
                 <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                 <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
@@ -95,7 +97,9 @@
         <div class="sort">
           <h3>Найдено: 3</h3>
           <ul class="sort-type">
-            <li>Сортировка:</li>
+            <li>
+              <span class="sort-title">Сортировка:</span>
+            </li>
             <li>
               <span>по цене</span>
             </li>
@@ -108,15 +112,15 @@
           </ul>
           <ul class="sort-direction">
             <li class="direction-arrow">
-              <span aria-label="по возрастанию">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" aria-label="по возрастанию">
                   <path fill="#cacaca" d="M5.5 0L0 10h11z"></path>
                 </svg>
               </span>
             </li>
             <li class="direction-arrow active">
-              <a href="#" aria-label="по убыванию">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" aria-label="по убыванию">
                   <path fill="#cacaca" d="M5.5 10L0 0h11"></path>
                 </svg>
               </a>
@@ -131,7 +135,7 @@
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
               <a href="#" class="photo">
-                <img src="img/item-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
+                <img src="img/item-1.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">
               </a>
               <div class="info">
                 <h3 class="hotel-info-heading">
@@ -147,7 +151,9 @@
                 </div>
               </div>
               <div class="rating-block">
-                <span class="hotel-stars four" aria-label="4 звезды"></span>
+                <span class="hotel-stars four">
+                  <span class="visually-hidden">4 звезды</span>
+                </span>
                 <span class="hotel-rating">Рейтинг: 8,5</span>
               </div>
             </div>
@@ -155,7 +161,7 @@
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
               <a href="#" class="photo">
-                <img src="img/item-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+                <img src="img/item-2.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
               </a>
               <div class="info">
                 <h3 class="hotel-info-heading">
@@ -171,7 +177,9 @@
                 </div>
               </div>
               <div class="rating-block">
-                <span class="hotel-stars three" aria-label="3 звезды"></span>
+                <span class="hotel-stars three">
+                  <span class="visually-hidden">3 звезды</span>
+                </span>
                 <span class="hotel-rating">Рейтинг: 8,9</span>
               </div>
             </div>
@@ -179,7 +187,7 @@
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
               <a href="#" class="photo">
-                <img src="img/item-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                <img src="img/item-3.jpg" width="135" height="90" alt="Фото апартаметов Villas at Poco Diablo">
               </a>
               <div class="info">
                 <h3 class="hotel-info-heading">
@@ -195,7 +203,9 @@
                 </div>
               </div>
               <div class="rating-block">
-                <span class="hotel-stars two" aria-label="2 звезды"></span>
+                <span class="hotel-stars two">
+                  <span class="visually-hidden">2 звезды</span>
+                </span>
                 <span class="hotel-rating">Рейтинг: 9,2</span>
               </div>
             </div>
