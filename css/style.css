@@ -94,7 +94,7 @@ a {
 
 .about {
     text-align: center;
-    padding: 50px 150px
+    padding: 50px 150px 49px
 }
 
 .about h2 {
@@ -182,7 +182,7 @@ a {
     text-align: center;
     color: #fff;
     margin: 0;
-    padding: 45px 125px 1px
+    padding: 45px 121px 1px
 }
 
 .features-list p {
@@ -248,7 +248,7 @@ a {
 .souvenirs {
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
-    background-position: top 60px center
+    background-position: top 56px center
 }
 
 .search {
@@ -1173,7 +1173,7 @@ a {
     text-transform: uppercase
 }
 
-p > input[type=checkbox] + label {
+input[type=checkbox] + label {
     top: 0;
     left: 0;
     height: 23px;
@@ -1181,15 +1181,15 @@ p > input[type=checkbox] + label {
     background-repeat: no-repeat
 }
 
-p > input[type=checkbox]:checked + label {
+input[type=checkbox]:checked + label {
     background-image: url(../img/checkbox-on.svg)
 }
 
-p > input[type=checkbox]:disabled + label {
+input[type=checkbox]:disabled + label {
     opacity: .3
 }
 
-p > input[type=checkbox]:focus + label {
+input[type=checkbox]:focus + label {
     outline: 1px solid #06c;
 }
 
